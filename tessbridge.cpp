@@ -55,7 +55,7 @@ void SetPixImage(TessBaseAPI a, PixImage pix) {
   Pix *image = (Pix*) pix;
   api->SetImage(image);
   // Force 300 DPI
-  api->SetSourceYResolution(300);
+  api->SetSourceResolution(300);
   //if (api->GetSourceYResolution() < 70) {
   //  api->SetSourceResolution(70);
   //}
